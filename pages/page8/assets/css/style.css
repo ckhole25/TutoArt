@@ -1,0 +1,542 @@
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif; /* Comic Sans for a playful, artistic feel */ /* Default font for the body */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Specific background for the top hero section (e.g., landing page hero) */
+.hero-background {
+    background-image: url('/assets/img/TutoArt Background.png'); /* This remains for your general hero if you have one */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-bg {
+    background-color: #4B1F1F; /* Dark brown from the image */
+}
+
+.form-bg {
+    background-color: rgba(255, 255, 255, 0.2); /* Translucent white */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.tutoart-title {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif; /* A more artistic, flowing font for the main title */
+    font-size: 4rem; /* Large font size */
+    color: #333; /* Darker text for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.description-text {
+    font-family: 'Dancing Script', cursive; /* Artistic font for hero description */
+    font-size: 1.5rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Custom styles for the input fields to match the image's blue tint */
+.input-field {
+    background-color: rgba(173, 216, 230, 0.4); /* Light blue with transparency */
+    border: 1px solid rgba(173, 216, 230, 0.6);
+    color: #333;
+}
+
+.input-field::placeholder {
+    color: #555;
+}
+
+.login-btn {
+    background-color: #007bff; /* Blue for login button */
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.register-btn {
+    background-color: #28a745; /* Green for register button */
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #218838;
+}
+
+/* New styles for the additional sections */
+.orange-section-bg {
+    background-color: #c7643d; /* The orange-brown background from the new images */
+    color: white; /* Default text color for this section */
+}
+
+.section-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 2.5rem; /* Large size for titles like WELCOME, ARTIST! */
+}
+
+.section-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; /* Medium weight for sub-titles like HOW TO START... */
+    font-size: 1.8rem;
+    color: #333; /* Dark text for contrast on orange background */
+}
+
+.section-sub-heading { /* Added for sub-headings like "TYPES OF ELEMENTS IN ART" */
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.list-item-title {
+    font-weight: 700; /* Bold for numbered list titles */
+}
+
+.info-icon {
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black for the info circle */
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+}
+
+/* FAQ Page Specific Styles */
+.faq-title {
+    font-family: 'Dancing Script', cursive; /* Cursive font for FAQ main title */
+    font-size: 3rem;
+    color: #333; /* Dark text for contrast on orange background */
+    margin-bottom: 1.5rem;
+}
+
+.faq-jump-link {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    color: #333; /* Dark text for links */
+    text-decoration: underline;
+    display: block; /* Each link on its own line */
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Styles for accordion FAQ items */
+.faq-item {
+    background-color: #A96E59; /* A slightly darker brown for the FAQ item background */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Subtle separator */
+    margin-bottom: 1px; /* To prevent gaps between items */
+    cursor: pointer;
+    overflow: hidden; /* For smooth height transition */
+}
+
+.faq-question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #EDE8E4; /* Light text for question */
+    transition: background-color 0.3s ease;
+    }
+
+.faq-question-header:hover {
+    background-color: #8D5A47; /* Slightly darker hover effect */
+}
+
+.faq-toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-toggle-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer-content {
+    background-color: #A96E59; /* Same background as question header */
+    padding: 0 1.5rem; /* Padding only left/right */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #F8F5F2; /* Lighter text for answer */
+    line-height: 1.6;
+    max-height: 0; /* Hidden by default */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth transition */
+}
+
+.faq-item.active .faq-answer-content {
+    max-height: 200px; /* Adjust as needed for content length */
+    padding-bottom: 1.5rem; /* Add bottom padding when active */
+}
+
+/* About Us Page Specific Styles */
+.about-us-content-bg {
+    background-color: #8B4513; /* A darker brown from the image */
+    color: #EDE8E4; /* Light text for contrast */
+    padding: 2rem;
+    border-radius: 0.5rem; /* Slightly rounded corners */
+    width: 100%; /* Make it stretch the whole width */
+    max-width: none; /* Ensure no max-width limits it */
+}
+
+.about-us-text {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif; /* Consistent font */
+    font-size: 1.25rem; /* Slightly larger text */
+    line-height: 1.8;
+    text-align: left; /* Reverted to left-aligned text as per image */
+}
+
+/* Support Us Page Specific Styles */
+.support-us-content-bg {
+    background-color: #A96E59; /* A distinct brown for the support content box */
+    color: #EDE8E4; /* Light text for contrast */
+    padding: 2.5rem; /* More padding */
+    border-radius: 0.5rem;
+    width: 100%; /* Stretch full width */
+    max-width: none; /* Override any max-width */
+    text-align: left; /* Text alignment as per image */
+}
+
+.support-us-text {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+.support-us-section-title {
+    font-family: 'Dancing Script', cursive; /* Cursive font for the title */
+    font-size: 3rem;
+    color: #333; /* Dark text for contrast on orange background */
+    margin-bottom: 1.5rem;
+    text-align: center; /* Centered as per image */
+}
+
+/* Drawings Page Specific Styles */
+.drawings-hero-background {
+    background-image: url('/assets/img/BG.png'); /* Updated to use BG.png */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.drawings-title {
+    font-family: 'Dancing Script', cursive; /* Cursive font for the title */
+    font-size: 4rem; /* Large font size */
+    color: #333; /* Darker text for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.drawings-description-text {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif; /* Comic Sans for description */
+    font-size: 1.5rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Gallery Page Specific Styles */
+.gallery-title {
+    font-family: 'Dancing Script', cursive; /* Cursive font for the title */
+    font-size: 3rem;
+    color: #333; /* Dark text for contrast on orange background */
+    margin-bottom: 1.5rem;
+    text-align: center; /* Centered as per image */
+}
+
+.gallery-description {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #444; /* Dark text color as per image */
+    text-align: center; /* Centered as per image */
+    max-width: 6xl; /* Limit width for readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Flexbox styles for the gallery grid */
+
+
+.gallery-item {
+    background-color: white; /* White background for each image container */
+    border-radius: 0.5rem; /* Rounded corners */
+    overflow: hidden; /* Ensures image corners match container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    /* Flexbox sizing for responsiveness */
+    flex: 1 1 calc(33.333% - 1rem); /* Default to 3 columns on large screens, accounting for gap */
+    max-width: calc(33.333% - 1rem); /* Max width for 3 columns */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below image */
+    border-radius: 0.5rem; /* Apply rounded corners to the image itself */
+}
+
+@media (max-width: 1023px) { /* Tablet and smaller (2 columns) */
+    .gallery-item {
+        flex: 1 1 calc(50% - 1rem); /* Two columns on medium screens */
+        max-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 767px) { /* Mobile (1 column) */
+    .gallery-item {
+        flex: 1 1 100%; /* Single column on small screens */
+        max-width: 100%;
+    }
+}
+
+/* Levels Page Specific Styles */
+.levels-title {
+    font-family: 'Dancing Script', cursive; /* Cursive font for the title */
+    font-size: 3rem;
+    color: #333; /* Dark text for contrast on orange background */
+    margin-bottom: 1.5rem;
+    text-align: center; /* Centered as per image */
+}
+
+.level-section {
+    background-color: #c7643d; /* Same orange-brown as main sections */
+    padding: 2rem 1rem; /* Padding for the whole section */
+    display: flex;
+    flex-direction: column; /* Stack on small screens */
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; /* Space between image and text */
+}
+
+@media (min-width: 768px) { /* Tablet and up */
+    .level-section.odd-row { /* Image on left, text on right */
+        flex-direction: row;
+    }
+    .level-section.even-row { /* Text on left, image on right */
+        flex-direction: row-reverse;
+    }
+}
+
+.level-card-container {
+    background-color: #A96E59; /* Brown background for text card */
+    color: #EDE8E4; /* Light text color */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width on small screens */
+    max-width: 500px; /* Max width for the text card */
+    display: flex; /* Added flex for vertical alignment of content and button */
+    flex-direction: column; /* Stack content and button vertically */
+    justify-content: space-between; /* Push button to bottom */
+}
+
+.level-card-title {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #F8F5F2; /* Lighter text for title */
+}
+
+.level-card-description {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* New style for the "View Tutorials" buttons */
+.level-button {
+    background-color: #4B1F1F; /* Dark brown, matching header */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem; /* Tailwind's rounded-md */
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width within its container */
+    margin-top: 1.5rem; /* Space above the button */
+}
+
+.level-button:hover {
+    background-color: #6a2c2c; /* Slightly lighter on hover */
+}
+
+
+/* Slider/Carousel styles */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Max width for the slider itself */
+    overflow: hidden; /* Ensures content outside is hidden */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Background for when images don't fill */
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* Removed scroll-snap-type, overflow-x, and scrollbar hiding for programmatic control */
+    width: 100%; /* Ensure track takes full width of wrapper */
+}
+
+.slider-item {
+    flex-shrink: 0; /* Prevent items from shrinking */
+    width: 100%; /* Each item takes full width of its container */
+    /* Removed scroll-snap-align as we are controlling with transform */
+}
+
+.slider-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem; /* Match container border-radius */
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.slider-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slider-arrow.left {
+    left: 10px;
+}
+
+.slider-arrow.right {
+    right: 10px;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-dot.active {
+    background-color: white;
+}
+
+/* New styles for Beginner Page content cards */
+.beginner-description {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #444; /* Dark text color as per image */
+    text-align: center; /* Centered as per image */
+    max-width: 6xl; /* Limit width for readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-section {
+    background-color: #A96E59; /* Brown background for content cards */
+    color: #EDE8E4; /* Light text color */
+}
+
+.youtube-video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Max width for the video container */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8B4513; /* Darker brown for video background */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.youtube-video-container iframe {
+    display: block; /* Remove extra space below iframe */
+}
+
+/* Profile Page Specific Styles */
+.profile-hero-background {
+    background-image: url('https://placehold.co/1200x400/F0F0F0/888?text=Swirl+Pattern+Background'); /* Placeholder for swirl pattern */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.profile-picture-container {
+    width: 150px; /* Size of the circular container */
+    height: 150px;
+    background-color: #A96E59; /* Brown color from the image */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #8B4513; /* Darker brown border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-picture {
+    font-size: 5rem; /* Size of the user icon */
+    color: #4B1F1F; /* Dark brown for the icon */
+}
+
+.username-text {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-size: 2.25rem; /* Large font size for username */
+    color: #444; /* Darker text */
+    margin-top: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.profile-content-section {
+    background-color: #c7643d; /* Orange-brown background for content sections */
+    color: #EDE8E4; /* Light text color */
+    padding: 2rem;
+}
+
+.profile-bio-section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Separator line */
+}
+
+.profile-text {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #F8F5F2; /* Lighter text color for readability */
+}
+
+.profile-detail-label {
+    font-weight: bold;
+    color: #4B1F1F; /* Darker brown for labels */
+}

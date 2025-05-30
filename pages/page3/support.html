@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutoArt - Support Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="header-bg text-white py-4 shadow-md">
+        <nav class="container mx-auto flex items-center justify-between px-4"> 
+            <div class="flex items-center space-x-2">
+                <img src="/assets/img/TutoArt_Logo-removebg-preview.png" alt="TutoArt Logo" class="h-20 w-25">
+                <span class="text-2xl font-bold">TutoArt</span>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="/index.html" class="hover:text-yellow-200 transition duration-300">Home</a>
+                
+                <div class="relative group"> 
+                    <a href="./about-us.html" class="hover:text-yellow-200 transition duration-300 flex items-center dropdown-toggle" id="about-us-dropdown-toggle">
+                        About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-36 z-10 dropdown-menu" id="about-us-dropdown-menu"> 
+                        <a href="../page1/FAQ.html" class="block px-4 py-2 hover:bg-gray-100">FAQs</a>
+                        <a href="../page2/aboout us.html" class="block px-4 py-2 hover:bg-gray-100">About us</a>
+                        <a href="../page3/support.html" class="block px-4 py-2 hover:bg-gray-100">Support</a>
+                    </div>
+                </div>
+                
+                <div class="relative group"> 
+                    <a href="#" class="hover:text-yellow-200 transition duration-300 flex items-center dropdown-toggle" id="drawings-dropdown-toggle">
+                        Drawings <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-40 z-10 dropdown-menu" id="drawings-dropdown-menu"> 
+                        <a href="../page4/drawings.html" class="block px-4 py-2 hover:bg-gray-100">Drawings</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Beginner</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Intermediate</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Advanced</a>
+
+                    </div>
+                </div>
+
+                <div class="relative group"> 
+                    <a href="../page8/profile.html" class="hover:text-yellow-200 transition duration-300 flex items-center dropdown-toggle" id="profile-dropdown-toggle">
+                        Profile <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-36 z-10 dropdown-menu" id="profile-dropdown-menu"> 
+                        <a href="../page8/profile.html" class="block px-4 py-2 hover:bg-gray-100">My Profile</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-2">
+            <a href="/index.html" class="block px-4 py-2 text-white hover:bg-gray-700">Home</a>
+            <a href="../about-us.html" class="block px-4 py-2 text-white hover:bg-gray-700">About Us</a>
+            <a href="../page4/drawings.html" class="block px-4 py-2 text-white hover:bg-gray-700">Drawings</a>
+            <a href="../page8/profile.html" class="block px-4 py-2 text-white hover:bg-gray-700">Profile</a>
+        </div>
+    </header>
+
+    <main class="flex-grow orange-section-bg py-16 px-4 relative">
+        <div class="container mx-auto text-gray-800"> 
+            <h1 class="support-us-section-title text-center mb-8">Support Us</h1>
+
+            <div class="support-us-content-bg p-8 rounded-lg shadow-lg">
+                <p class="support-us-text mb-4">
+                    TutoArt is built by students, for students. Some of our tutorials are handpicked from YouTube (the ones
+                    we found super helpful!), and some are made by us to guide fellow beginners. We try our best to make
+                    everything simple, creative, and beginner-friendly.
+                </p>
+                <p class="support-us-text mb-4">
+                    If you find our content useful and want to help us grow, here's how you can support us:
+                </p>
+                <ul class="list-none space-y-4 support-us-text">
+                    <li>
+                        <span class="font-bold">Share TutoArt</span> - Tell your friends, classmates, or post about us online! It helps more people discover what
+                        we offer.
+                    </li>
+                    <li>
+                        <span class="font-bold">Send Feedback</span> - We'd love to hear what you think. Your suggestions help us improve and add better
+                        content. Email us at <a href="mailto:tutoart@gmail.com" class="underline hover:text-yellow-200">tutoart@gmail.com</a>.
+                    </li>
+                    <li>
+                        <span class="font-bold">Unlock More Content</span> - Sign up to access intermediate and advanced tutorials. It helps us maintain the site
+                        and continue creating.
+                    </li>
+                    <li>
+                        <span class="font-bold">Become a Member</span> - Support us further and get exclusive content, features, or early access to new
+                        lessons.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="absolute bottom-4 left-4">
+            <div class="info-icon">
+                <i class="fas fa-info"></i>
+            </div>
+        </div>
+    </main>
+
+    <footer class="orange-section-bg py-4 text-center text-sm md:text-base border-t border-gray-600 relative">
+        <p class="text-gray-700">
+            TutoArt | Beginner tutorials are from YouTube creators (credited). Intermediate and Advanced content is original. | © 2025 TutoArt. All rights reserved.
+        </p>
+        <div class="absolute bottom-4 left-4 md:hidden">
+            <div class="info-icon">
+                <i class="fas fa-info"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simulate login state
+        let isLoggedIn = false; // Set to true to test logged-in access
+
+        // Function to simulate user login (for demonstration)
+        function simulateLogin() {
+            isLoggedIn = true;
+            console.log("User is now logged in!");
+            // In a real app, you'd handle actual login process here
+        }
+
+        // JavaScript for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const messageBox = document.getElementById('message-box'); // Ensure this element exists on the page
+            const closeMessageBoxButton = document.getElementById('close-message-box'); // Ensure this element exists
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Optional: Close mobile menu when a link is clicked
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // JavaScript for clickable dropdowns in header
+            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    // Find the dropdown menu relative to its parent 'group' div
+                    const parentGroup = this.closest('.group');
+                    const dropdownMenu = parentGroup ? parentGroup.querySelector('.dropdown-menu') : null;
+
+                    // Close other open dropdowns
+                    document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                        const menuParentGroup = menu.closest('.group');
+                        if (menuParentGroup !== parentGroup && !menu.classList.contains('hidden')) {
+                            menu.classList.add('hidden');
+                        }
+                    });
+
+                    if (dropdownMenu) {
+                        dropdownMenu.classList.toggle('hidden');
+                    }
+                });
+            });
+
+            // Close header dropdowns when clicking outside
+            window.addEventListener('click', function(event) {
+                dropdownToggles.forEach(toggle => {
+                    const parentGroup = toggle.closest('.group');
+                    const dropdownMenu = parentGroup ? parentGroup.querySelector('.dropdown-menu') : null;
+                    
+                    if (dropdownMenu) {
+                        // Check if the click was outside the dropdown toggle and the dropdown menu
+                        if (!toggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                            dropdownMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+
+            // Login restriction for Intermediate and Advanced links
+            // These elements might not exist on the Support Us page, so check for their existence
+            const intermediateLink = document.getElementById('intermediate-link');
+            const advancedLink = document.getElementById('advanced-link');
+            const digitalArtLink = document.getElementById('digital-art-link'); 
+
+            function handleRestrictedAccess(event) {
+                if (!isLoggedIn) {
+                    event.preventDefault(); // Prevent navigation
+                    if (messageBox) { // Check if messageBox exists before trying to use it
+                        messageBox.classList.remove('hidden'); // Show the message box
+                    }
+                } else {
+                    console.log(`Accessing: ${event.target.textContent} tutorials!`);
+                    // In a real application, navigate to the respective tutorial page
+                    // Example: window.location.href = `/tutorials/${event.target.id.replace('-link', '')}.html`;
+                }
+            }
+
+            if (intermediateLink) {
+                intermediateLink.addEventListener('click', handleRestrictedAccess);
+            }
+            if (advancedLink) {
+                advancedLink.addEventListener('click', handleRestrictedAccess);
+            }
+            if (digitalArtLink) { 
+                digitalArtLink.addEventListener('click', handleRestrictedAccess);
+            }
+
+            // Close message box
+            if (closeMessageBoxButton) { // Check if closeMessageBoxButton exists before adding listener
+                closeMessageBoxButton.addEventListener('click', () => {
+                    if (messageBox) {
+                        messageBox.classList.add('hidden');
+                    }
+                });
+            }
+
+            // JavaScript for FAQ Accordion (only relevant if this script is also used on FAQ page)
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const header = item.querySelector('.faq-question-header');
+                header.addEventListener('click', () => {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

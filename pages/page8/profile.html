@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutoArt - My Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="header-bg text-white py-4 shadow-md">
+        <nav class="container mx-auto flex items-center justify-between px-4"> 
+            <div class="flex items-center space-x-2">
+                <img src="/assets/img/TutoArt_Logo-removebg-preview.png" alt="TutoArt Logo" class="h-20 w-20">
+                <span class="text-2xl font-bold">TutoArt</span>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="/index.html" class="hover:text-yellow-200 transition duration-300">Home</a>
+                
+                <div class="relative group"> 
+                    <a href="../page1/FAQ.html" class="hover:text-yellow-200 transition duration-300 flex items-center">
+                        About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-36 z-10 dropdown-menu" id="about-us-dropdown-menu"> 
+                        <a href="../page1/FAQ.html" class="block px-4 py-2 hover:bg-gray-100">FAQs</a>
+                        <a href="../page2/aboout us.html" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
+                        <a href="../page3/support.html" class="block px-4 py-2 hover:bg-gray-100">Support</a>
+                    </div>
+                </div>
+                
+                <div class="relative group"> 
+                    <a href="../page4/drawings.html" class="hover:text-yellow-200 transition duration-300 flex items-center">
+                        Drawings <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-40 z-10 dropdown-menu" id="drawings-dropdown-menu"> 
+                        <a href="./levels.html" class="block px-4 py-2 hover:bg-gray-100" id="levels-link-nav">Levels</a>
+                        <a href="./beginner.html" class="block px-4 py-2 hover:bg-gray-100" id="beginner-link-nav">Beginner</a>
+                        <a href="./levels.html" class="block px-4 py-2 hover:bg-gray-100" id="intermediate-link-nav">Intermediate</a>
+                        <a href="./levels.html" class="block px-4 py-2 hover:bg-gray-100" id="advanced-link-nav">Advanced</a>
+                        <a href="./gallery.html" class="block px-4 py-2 hover:bg-gray-100">Gallery</a> 
+                    </div>
+                </div>
+
+                <div class="relative group"> 
+                    <a href="../page8/profile.html" class="hover:text-yellow-200 transition duration-300 flex items-center">
+                        Profile <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-36 z-10 dropdown-menu" id="profile-dropdown-menu"> 
+                        <a href="../page8/profile.html" class="block px-4 py-2 hover:bg-gray-100">My Profile</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-2">
+            <a href="/index.html" class="block px-4 py-2 text-white hover:bg-gray-700">Home</a>
+            <a href="../about-us.html" class="block px-4 py-2 text-white hover:bg-gray-700">About Us</a>
+            <a href="../drawings.html" class="block px-4 py-2 text-white hover:bg-gray-700">Drawings</a>
+            <a href="../page8/profile.html" class="block px-4 py-2 text-white hover:bg-gray-700">Profile</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="profile-hero-background min-h-[calc(100vh-80px)] flex flex-col items-center justify-center p-4 text-center">
+            <div class="profile-picture-container mb-4">
+                <i class="fas fa-user profile-picture"></i>
+            </div>
+            <p class="username-text">@USERNAME</p>
+        </section>
+
+        <section class="profile-content-section profile-bio-section py-8 px-4 text-center">
+            <p class="profile-text max-w-2xl mx-auto">
+                Digital artist in progress | Loves sketching and experimenting with colors.
+            </p>
+        </section>
+
+        <section class="profile-content-section profile-details-section py-8 px-4 text-center md:text-left">
+            <div class="max-w-2xl mx-auto space-y-2">
+                <p class="profile-text"><span class="profile-detail-label">Skill Level:</span> Beginner</p>
+                <p class="profile-text"><span class="profile-detail-label">Membership Status:</span> Free Member</p>
+                <p class="profile-text"><span class="profile-detail-label">Current Plan:</span> Basic</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="orange-section-bg py-4 text-center text-sm md:text-base border-t border-gray-600 relative">
+        <p class="text-gray-700">
+            TutoArt | Beginner tutorials are from YouTube creators (credited). Intermediate and Advanced content is original. | © 2025 TutoArt. All rights reserved.
+        </p>
+    </footer>
+
+    <div id="message-box" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white p-6 rounded-lg shadow-xl text-center">
+            <p class="text-lg font-semibold mb-4 text-gray-800">Login Required</p>
+            <p class="text-gray-600 mb-6">You need to be logged in to access Intermediate and Advanced tutorials.</p>
+            <button id="close-message-box" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">OK</button>
+        </div>
+    </div>
+
+    <script>
+        let isLoggedIn = false; 
+
+        function simulateLogin() {
+            isLoggedIn = true;
+            console.log("User is now logged in!");
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const messageBox = document.getElementById('message-box'); 
+            const closeMessageBoxButton = document.getElementById('close-message-box'); 
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Login restriction for Intermediate and Advanced links in the header navigation
+            const levelsLinkNav = document.getElementById('levels-link-nav');
+            const beginnerLinkNav = document.getElementById('beginner-link-nav');
+            const intermediateLinkNav = document.getElementById('intermediate-link-nav');
+            const advancedLinkNav = document.getElementById('advanced-link-nav');
+            const digitalArtLinkNav = document.getElementById('digital-art-link-nav'); 
+
+            function handleRestrictedAccessNav(event) {
+                // 'Levels', 'Beginner', and 'Gallery' links are not restricted by login
+                if (event.currentTarget.id === 'levels-link-nav' || event.currentTarget.id === 'beginner-link-nav' || event.currentTarget.getAttribute('href') === './gallery.html') {
+                    console.log(`Accessing: ${event.target.textContent} (unrestricted)!`);
+                    return true; 
+                }
+
+                if (!isLoggedIn) {
+                    event.preventDefault(); 
+                    if (messageBox) { 
+                        messageBox.classList.remove('hidden'); 
+                    }
+                    return false; 
+                } else {
+                    console.log(`Accessing: ${event.target.textContent} tutorials (restricted)!`);
+                    return true; 
+                }
+            }
+
+            if (levelsLinkNav) {
+                levelsLinkNav.addEventListener('click', handleRestrictedAccessNav);
+            }
+            if (beginnerLinkNav) {
+                beginnerLinkNav.addEventListener('click', handleRestrictedAccessNav);
+            }
+            if (intermediateLinkNav) {
+                intermediateLinkNav.addEventListener('click', handleRestrictedAccessNav);
+            }
+            if (advancedLinkNav) {
+                advancedLinkNav.addEventListener('click', handleRestrictedAccessNav);
+            }
+            if (digitalArtLinkNav) { 
+                digitalArtLinkNav.addEventListener('click', handleRestrictedAccessNav);
+            }
+
+            // Close message box
+            if (closeMessageBoxButton) { 
+                closeMessageBoxButton.addEventListener('click', () => {
+                    if (messageBox) {
+                        messageBox.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutoArt - Learn, Create, Grow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="header-bg text-white py-4 shadow-md">
+        <nav class="container mx-auto flex items-center justify-between px-4">
+            <div class="flex items-center space-x-2">
+                <img src="./assets/img/TutoArt_Logo-removebg-preview.png" alt="TutoArt Logo" class="h-20 w-25">
+                <span class="text-2xl font-bold">TutoArt</span>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="./index.html" class="hover:text-yellow-200 transition duration-300">Home</a>
+                
+                <div class="relative group">
+                    <a href="./pages/page1/FAQ.html" class="hover:text-yellow-200 transition duration-300 flex items-center dropdown-toggle" id="about-us-dropdown-toggle">
+                        About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-36 z-10 dropdown-menu" id="about-us-dropdown-menu">
+                        <a href="./pages/page1/FAQ.html" class="block px-4 py-2 hover:bg-gray-100">FAQs</a>
+                        <a href="./pages/page2/aboout us.html" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
+                        <a href="./pages/page3/support.html" class="block px-4 py-2 hover:bg-gray-100">Support</a>
+                    </div>
+                </div>
+                
+                <div class="relative group">
+                    <a href="./pages/page4/drawings.html" class="hover:text-yellow-200 transition duration-300 flex items-center dropdown-toggle" id="drawings-dropdown-toggle">
+                        Drawings <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-40 z-10 dropdown-menu" id="drawings-dropdown-menu">
+                        <a href="./pages/page4/drawings.html" class="block px-4 py-2 hover:bg-gray-100">Drawings</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Beginner</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Intermediate</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Advanced</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <a href="./pages/page8/profile.html" class="hover:text-yellow-200 transition duration-300 flex items-center dropdown-toggle" id="profile-dropdown-toggle">
+                        Profile <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-36 z-10 dropdown-menu" id="profile-dropdown-menu">
+                        <a href="./pages/page8/profile.html" class="block px-4 py-2 hover:bg-gray-100">My Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-2">
+            <a href="#" class="block px-4 py-2 text-white hover:bg-gray-700">Home</a>
+            <a href="#" class="block px-4 py-2 text-white hover:bg-gray-700">About Us</a>
+            <a href="#" class="block px-4 py-2 text-white hover:bg-gray-700">Drawings</a>
+            <a href="./pages/page8/profile.html" class="block px-4 py-2 text-white hover:bg-gray-700">Profile</a>
+
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="hero-background min-h-[calc(100vh-80px)] flex flex-col md:flex-row items-center justify-center p-4">
+            <div class="w-full md:w-1/2 text-center md:text-left p-8">
+                <h1 class="tutoart-title mb-4">TutoArt</h1>
+                <p class="description-text max-w-md mx-auto md:mx-0">
+                    Learn, create, and grow—your journey to artistic excellence starts here.
+                </p>
+            </div>
+
+            <div class="w-full md:w-1/2 flex justify-center items-center p-4">
+                <div class="form-bg p-8 rounded-xl shadow-lg w-full max-w-sm">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="username" class="sr-only">Username</label>
+                            <div class="relative rounded-md shadow-sm">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-user text-gray-600"></i>
+                                </div>
+                                <input type="text" id="username" name="username" class="input-field block w-full pl-10 pr-3 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Username">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="password" class="sr-only">Password</label>
+                            <div class="relative rounded-md shadow-sm">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-lock text-gray-600"></i>
+                                </div>
+                                <input type="password" id="password" name="password" class="input-field block w-full pl-10 pr-3 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Password">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between text-white text-sm">
+                            <div class="flex items-center">
+                                <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                <label for="remember-me" class="ml-2 block text-gray-700">Remember me</label>
+                            </div>
+                            <div class="text-sm">
+                                <a href="#" class="font-medium text-blue-600 hover:text-blue-500">Forgot Password?</a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="login-btn w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                LOG IN
+                            </button>
+                        </div>
+
+                        <div>
+                            <button type="button" class="register-btn w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                                REGISTER
+                            </button>
+                        </div>
+
+                        <div class="text-center text-sm text-gray-700">
+                            Don't have an account? <a href="#" class="font-medium text-blue-600 hover:text-blue-500">Sign up</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="orange-section-bg py-16 px-4 relative">
+            <div class="container mx-auto text-center md:text-left">
+                <h2 class="section-title text-4xl font-bold mb-6">WELCOME, ARTIST!</h2>
+                <p class="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto md:mx-0">
+                    TutoArt is a creative learning space made for students and beginners who want to dive into the world of art. Whether you're picking up a pencil for the first time or looking to sharpen your skills, this site offers a variety of step-by-step tutorials, handpicked to help you learn at your own pace.
+                </p>
+            </div>
+            <div class="absolute bottom-4 left-4">
+                <div class="info-icon">
+                    <i class="fas fa-info"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="orange-section-bg py-16 px-4">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="section-subtitle text-3xl font-semibold mb-8 text-center md:text-left">HOW TO START YOUR ART JOURNEY</h2>
+                <p class="text-lg md:text-xl leading-relaxed mb-8 text-center md:text-left">
+                    Not sure where to begin? Just follow these steps!
+                </p>
+
+                <ol class="space-y-6 text-lg md:text-xl pl-8 list-decimal list-outside">
+                    <li>
+                        <span class="list-item-title">Pick Your Skill Level</span><br>
+                        Go to the 'Drawing' page then under it, is the 'Levels'. Click on Beginner, Intermediate, or Advanced based on your experience.
+                    </li>
+                    <li>
+                        <span class="list-item-title">Choose a Tutorial</span><br>
+                        Browse through the tutorials and pick one that interests you—drawing, painting, digital, and more!
+                    </li>
+                    <li>
+                        <span class="list-item-title">Start Creating</span><br>
+                        Follow the video guide and try it yourself. Don't worry about being perfect—just have fun!
+                    </li>
+                    <li>
+                        <span class="list-item-title">Practice and Level Up</span><br>
+                        Keep going! Try more tutorials to improve and find your own art style.
+                    </li>
+                </ol>
+            </div>
+            <div class="absolute bottom-4 left-4">
+                <div class="info-icon">
+                    <i class="fas fa-info"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="orange-section-bg py-4 text-center text-sm md:text-base border-t border-gray-600 relative">
+        <p class="text-gray-700">
+            TutoArt | Beginner tutorials are from YouTube creators (credited). Intermediate and Advanced content is original. | © 2025 TutoArt. All rights reserved.
+        </p>
+        <div class="absolute bottom-4 left-4 md:hidden">
+            <div class="info-icon">
+                <i class="fas fa-info"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Optional: Close mobile menu when a link is clicked
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // JavaScript for clickable dropdowns on desktop
+            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    const dropdownMenu = this.nextElementSibling; // Get the next sibling, which is the dropdown menu
+                    if (dropdownMenu && dropdownMenu.classList.contains('dropdown-menu')) {
+                        dropdownMenu.classList.toggle('hidden');
+                    }
+                });
+            });
+
+            // Close dropdowns when clicking outside
+            window.addEventListener('click', function(event) {
+                dropdownToggles.forEach(toggle => {
+                    const dropdownMenu = toggle.nextElementSibling;
+                    if (dropdownMenu && dropdownMenu.classList.contains('dropdown-menu')) {
+                        // Check if the click was outside the dropdown toggle and the dropdown menu
+                        if (!toggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                            dropdownMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutoArt - Beginner Level</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="header-bg text-white py-4 shadow-md">
+        <nav class="container mx-auto flex items-center justify-between px-4"> 
+            <div class="flex items-center space-x-2">
+                <img src="/assets/img/TutoArt_Logo-removebg-preview.png" alt="TutoArt Logo" class="h-20 w-25">
+                <span class="text-2xl font-bold">TutoArt</span>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="/index.html" class="hover:text-yellow-200 transition duration-300">Home</a>
+                
+                <div class="relative group"> 
+                    <a href="../page1/FAQ.html" class="hover:text-yellow-200 transition duration-300 flex items-center">
+                        About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-36 z-10 dropdown-menu" id="about-us-dropdown-menu"> 
+                        <a href="../page1/FAQ.html" class="block px-4 py-2 hover:bg-gray-100">FAQs</a>
+                        <a href="../page2/aboout us.html" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
+                        <a href="../page3/support.html" class="block px-4 py-2 hover:bg-gray-100">Support</a>
+                    </div>
+                </div>
+                
+                <div class="relative group"> 
+                    <a href="../page4/drawings.html" class="hover:text-yellow-200 transition duration-300 flex items-center">
+                        Drawings <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-40 z-10 dropdown-menu" id="drawings-dropdown-menu"> 
+                        <a href="../page6/levels.html" class="block px-4 py-2 hover:bg-gray-100" id="levels-link-nav">Levels</a>
+                        <a href="../page7/beginner.html" class="block px-4 py-2 hover:bg-gray-100" id="beginner-link-nav">Beginner</a>
+                        <a href="./levels.html" class="block px-4 py-2 hover:bg-gray-100" id="intermediate-link-nav">Intermediate</a>
+                        <a href="./levels.html" class="block px-4 py-2 hover:bg-gray-100" id="advanced-link-nav">Advanced</a>
+                        <a href="../page5/Gallery.html" class="block px-4 py-2 hover:bg-gray-100">Gallery</a> 
+                    </div>
+                </div>
+
+                <div class="relative group"> 
+                    <a href="../page8/profile.html" class="hover:text-yellow-200 transition duration-300 flex items-center">
+                        Profile <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-36 z-10 dropdown-menu" id="profile-dropdown-menu"> 
+                        <a href="../page8/profile.html" class="block px-4 py-2 hover:bg-gray-100">My Profile</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-2">
+            <a href="/index.html" class="block px-4 py-2 text-white hover:bg-gray-700">Home</a>
+            <a href="../about-us.html" class="block px-4 py-2 text-white hover:bg-gray-700">About Us</a>
+            <a href="../drawings.html" class="block px-4 py-2 text-white hover:bg-gray-700">Drawings</a>
+            <a href="../page8/profile.html" class="block px-4 py-2 text-white hover:bg-gray-700">Profile</a>
+        </div>
+    </header>
+
+    <main class="flex-grow orange-section-bg py-16 px-4 relative">
+        <div class="container mx-auto max-w-6xl text-gray-800"> 
+            <h1 class="levels-title mb-8">BEGINNER LEVEL</h1>
+
+            <p class="beginner-description mb-12 px-4">
+                Just starting out? Learn the basics of drawing like art elements, simple techniques, beginner tips, and materials you need. Plus, try a face tutorial with a YouTube guide on proportions!
+            </p>
+
+            <section class="content-section bg-brown-card p-8 rounded-lg shadow-lg mb-12">
+                <h2 class="section-subtitle text-center mb-6">UNDERSTANDING THE BASICS</h2>
+                <h3 class="section-sub-heading text-center mb-4">TYPES OF ELEMENTS IN ART</h3>
+                <ul class="list-none space-y-4 text-lg">
+                    <li><span class="list-item-title">1. Line:</span> A line is a continuous mark made on a surface. It can vary in width, length, direction, and curvature.</li>
+                    <li><span class="list-item-title">2. Shape:</span> A shape is a self-contained area with height, width, and depth. Shapes can be geometric (like squares and circles) or organic (like free-flowing shapes).</li>
+                    <li><span class="list-item-title">3. Form:</span> Form refers to the three-dimensional quality of an object. It can be created through shading, texture, and other techniques.</li>
+                    <li><span class="list-item-title">4. Value:</span> Value refers to the lightness or darkness of a color or object. It can be used to create contrast, depth, and mood.</li>
+                    <li><span class="list-item-title">5. Texture:</span> Texture refers to the surface quality or "feel" of an object. It can be visual (implied through drawing) or tactile (physical).</li>
+                </ul>
+            </section>
+
+            <section class="content-section bg-brown-card p-8 rounded-lg shadow-lg mb-12">
+                <h2 class="section-subtitle text-center mb-6">BASIC DRAWING TECHNIQUES</h2>
+                <ul class="list-none space-y-4 text-lg">
+                    <li><span class="list-item-title">1. Hatching:</span> Hatching involves creating a series of parallel lines that follow the contours of an object. It can be used to create texture, shading, and depth.</li>
+                    <li><span class="list-item-title">2. Cross-Hatching:</span> Cross-hatching involves layering hatching lines at different angles to create deeper shading and texture.</li>
+                    <li><span class="list-item-title">3. Stippling:</span> Stippling involves creating an image using small dots. The density and spacing of the dots can be used to create texture, shading, and detail.</li>
+                    <li><span class="list-item-title">4. Gesture Drawing:</span> Gesture drawing involves quickly sketching the overall pose and movement of a subject. It's a great way to capture the essence of a subject.</li>
+                </ul>
+            </section>
+
+            <section class="content-section bg-brown-card p-8 rounded-lg shadow-lg mb-12">
+                <h2 class="section-subtitle text-center mb-6">TIPS FOR BEGINNERS</h2>
+                <ul class="list-none space-y-4 text-lg">
+                    <li><span class="list-item-title">1. Practice regularly:</span> Regular practice will help you develop your drawing skills and build confidence.</li>
+                    <li><span class="list-item-title">2. Use reference images:</span> Reference images can help you draw more accurately and realistically.</li>
+                    <li><span class="list-item-title">3. Experiment with different materials:</span> Try different drawing tools and materials to find what works best for you.</li>
+                    <li><span class="list-item-title">4. Don't be too hard on yourself:</span> Drawing takes time and practice to develop. Be patient and enjoy the process.</li>
+                </ul>
+            </section>
+
+            <section class="content-section bg-brown-card p-8 rounded-lg shadow-lg mb-12">
+                <h2 class="section-subtitle text-center mb-6">BASIC MATERIALS</h2>
+                <ul class="list-none space-y-4 text-lg">
+                    <li><span class="list-item-title">1. Pencils:</span> Pencils are a versatile drawing tool that can be used for a wide range of techniques.</li>
+                    <li><span class="list-item-title">2. Erasers:</span> Erasers are used to correct mistakes and create highlights.</li>
+                    <li><span class="list-item-title">3. Paper:</span> Choose a paper that is suitable for drawing, such as sketch paper or cartridge paper.</li>
+                    <li><span class="list-item-title">4. Sharpener:</span> A sharpener is used to keep your pencils sharp and ready for use.</li>
+                </ul>
+            </section>
+
+            <section class="content-section bg-brown-card p-8 rounded-lg shadow-lg mb-12">
+                <h2 class="section-subtitle text-center mb-6">BASIC FACE TUTORIAL</h2>
+                <h3 class="section-sub-heading text-center mb-4">Step-by-Step Guide to Basic Face Proportions</h3>
+                <ul class="list-none space-y-4 text-lg mb-8">
+                    <li><span class="list-item-title">Step 1: Draw a Head Shape</span><br>Start with an oval or circle for the general head shape. If you want a more structured approach, lightly sketch a vertical line down the center to help with symmetry.</li>
+                    <li><span class="list-item-title">Step 2: Divide the Face into Halves</span><br>Draw a horizontal line across the middle of the face—this will be the guideline for the eyes. Divide the lower half into two sections—this helps place the nose and mouth.</li>
+                    <li><span class="list-item-title">Step 3: Place the Eyes</span><br>The eyes generally sit along the middle horizontal guideline. The space between the eyes should be roughly one eye-width.</li>
+                    <li><span class="list-item-title">Step 4: Add the Nose</span><br>The bottom of the nose usually aligns with the first lower division of the face. Its width should be roughly as wide as the space between the inner corners of the eyes.</li>
+                    <li><span class="list-item-title">Step 5: Position the Mouth</span><br>The mouth sits at the second lower division of the face. The corners of the mouth usually align with the middle of each eye.</li>
+                    <li><span class="list-item-title">Step 6: Add the Ears</span><br>Ears start at the eye level and end at the bottom of the nose.</li>
+                    <li><span class="list-item-title">Step 7: Draw the Hairline</span><br>The hairline is placed roughly one-third of the way down from the top of the head.</li>
+                </ul>
+
+                <p class="text-center text-lg mb-4">THE LINK SHOWS THE TUTORIAL ON HOW TO DRAW A BASIC FACE PROPORTIONS USING BASIC SHAPES.</p>
+                
+                <div class="youtube-video-container mb-8">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/Xq4y4Z8V_u8" 
+                        title="YouTube video player - How to Draw a Face Basic Proportions" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                        class="rounded-lg w-full h-auto aspect-video"
+                    ></iframe>
+                </div>
+
+                <div class="text-center">
+                    <p class="text-xl font-bold mb-2">How to Draw a Face Basic Proportions</p>
+                    <p class="text-lg italic mb-4">(easy drawing for beginners)</p>
+                    <p class="text-lg mb-2">Rate this tutorial:</p>
+                    <div class="flex justify-center items-center space-x-1 text-yellow-400 text-2xl">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-1">No rating yet</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="orange-section-bg py-4 text-center text-sm md:text-base border-t border-gray-600 relative">
+        <p class="text-gray-700">
+            TutoArt | Beginner tutorials are from YouTube creators (credited). Intermediate and Advanced content is original. | © 2025 TutoArt. All rights reserved.
+        </p>
+    </footer>
+
+    <div id="message-box" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white p-6 rounded-lg shadow-xl text-center">
+            <p class="text-lg font-semibold mb-4 text-gray-800">Login Required</p>
+            <p class="text-gray-600 mb-6">You need to be logged in to access Intermediate and Advanced tutorials.</p>
+            <button id="close-message-box" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">OK</button>
+        </div>
+    </div>
+
+    <script>
+        let isLoggedIn = false; 
+
+        function simulateLogin() {
+            isLoggedIn = true;
+            console.log("User is now logged in!");
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const messageBox = document.getElementById('message-box'); 
+            const closeMessageBoxButton = document.getElementById('close-message-box'); 
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Login restriction for Intermediate and Advanced links in the header navigation
+            const levelsLinkNav = document.getElementById('levels-link-nav');
+            const beginnerLinkNav = document.getElementById('beginner-link-nav'); // This page is beginner, so it's always accessible
+            const intermediateLinkNav = document.getElementById('intermediate-link-nav');
+            const advancedLinkNav = document.getElementById('advanced-link-nav');
+            const digitalArtLinkNav = document.getElementById('digital-art-link-nav'); 
+
+            function handleRestrictedAccessNav(event) {
+                // 'Levels', 'Beginner', and 'Gallery' links are not restricted by login
+                if (event.currentTarget.id === 'levels-link-nav' || event.currentTarget.id === 'beginner-link-nav' || event.currentTarget.getAttribute('href') === './gallery.html') {
+                    console.log(`Accessing: ${event.target.textContent} (unrestricted)!`);
+                    return true; 
+                }
+
+                if (!isLoggedIn) {
+                    event.preventDefault(); 
+                    if (messageBox) { 
+                        messageBox.classList.remove('hidden'); 
+                    }
+                    return false; 
+                } else {
+                    console.log(`Accessing: ${event.target.textContent} tutorials (restricted)!`);
+                    return true; 
+                }
+            }
+
+            if (levelsLinkNav) {
+                levelsLinkNav.addEventListener('click', handleRestrictedAccessNav);
+            }
+            if (beginnerLinkNav) {
+                beginnerLinkNav.addEventListener('click', handleRestrictedAccessNav);
+            }
+            if (intermediateLinkNav) {
+                intermediateLinkNav.addEventListener('click', handleRestrictedAccessNav);
+            }
+            if (advancedLinkNav) {
+                advancedLinkNav.addEventListener('click', handleRestrictedAccessNav);
+            }
+            if (digitalArtLinkNav) { 
+                digitalArtLinkNav.addEventListener('click', handleRestrictedAccessNav);
+            }
+
+            // Close message box
+            if (closeMessageBoxButton) { 
+                closeMessageBoxButton.addEventListener('click', () => {
+                    if (messageBox) {
+                        messageBox.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

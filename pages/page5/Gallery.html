@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutoArt - Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style.css"> 
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="header-bg text-white py-4 shadow-md">
+        <nav class="container mx-auto flex items-center justify-between px-4"> 
+            <div class="flex items-center space-x-2">
+                <img src="/assets/img/TutoArt_Logo-removebg-preview.png" alt="TutoArt Logo" class="h-20 w-25">
+                <span class="text-2xl font-bold">TutoArt</span>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="/index.html" class="hover:text-yellow-200 transition duration-300">Home</a>
+                
+                <div class="relative group"> 
+                    <a href="../page1/FAQ.html" class="hover:text-yellow-200 transition duration-300 flex items-center">
+                        About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-36 z-10 dropdown-menu" id="about-us-dropdown-menu"> 
+                        <a href="../page1/FAQ.html" class="block px-4 py-2 hover:bg-gray-100">FAQs</a>
+                        <a href="../page2/aboout us.html" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
+                        <a href="../page3/support.html" class="block px-4 py-2 hover:bg-gray-100">Support</a>
+                    </div>
+                </div>
+                
+                <div class="relative group"> 
+                    <a href="../page4/drawings.html" class="hover:text-yellow-200 transition duration-300 flex items-center">
+                        Drawings <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-40 z-10 dropdown-menu" id="drawings-dropdown-menu"> 
+                        <a href="../page6/levels.html" class="block px-4 py-2 hover:bg-gray-100" id="beginner-link">Levels</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100" id="beginner-link">Beginner</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100" id="intermediate-link">Intermediate</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100" id="advanced-link">Advanced</a>
+                    </div>
+                </div>
+
+                <div class="relative group"> 
+                    <a href="../page8/profile.html" class="hover:text-yellow-200 transition duration-300 flex items-center">
+                        Profile <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-36 z-10 dropdown-menu" id="profile-dropdown-menu"> 
+                        <a href="../page8/profile.html" class="block px-4 py-2 hover:bg-gray-100">My Profile</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-2">
+            <a href="/index.html" class="block px-4 py-2 text-white hover:bg-gray-700">Home</a>
+            <a href="../about-us.html" class="block px-4 py-2 text-white hover:bg-gray-700">About Us</a>
+            <a href="../drawings.html" class="block px-4 py-2 text-white hover:bg-gray-700">Drawings</a>
+            <a href="../page8/profile.html" class="block px-4 py-2 text-white hover:bg-gray-700">Profile</a>
+        </div>
+    </header>
+
+    <main class="flex-grow orange-section-bg py-16 px-4 relative">
+        <div class="container mx-auto"> 
+            <h1 class="gallery-title mb-8">GALLERY</h1>
+
+            <p class="gallery-description mb-12 px-8">
+                Take a look at what's possible! This gallery showcases artworks made using our tutorials from beginner basics to advanced pieces.
+                These samples give you a glimpse of what you can achieve as you level up your skills with TutoArt.
+                Want to create something like this? Unlock our paid levels and start improving today.
+            </p>
+
+            <div class="gallery-grid flex flex-wrap justify-center gap-4 px-4">
+                <div class="gallery-item">
+                    <img src="/assets/img/gallery1.png" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/img/gallery2.png" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/img/gallery3.png" alt="Gallery Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/img/gallery4.png" alt="Gallery Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/img/gallery5.png" alt="Gallery Image 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/img/gallery 6.png" alt="Gallery Image 6">
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-4 left-4">
+            <div class="info-icon">
+                <i class="fas fa-info"></i>
+            </div>
+        </div>
+    </main>
+
+    <footer class="orange-section-bg py-4 text-center text-sm md:text-base border-t border-gray-600 relative">
+        <p class="text-gray-700">
+            TutoArt | Beginner tutorials are from YouTube creators (credited). Intermediate and Advanced content is original. | © 2025 TutoArt. All rights reserved.
+        </p>
+        <div class="absolute bottom-4 left-4 md:hidden">
+            <div class="info-icon">
+                <i class="fas fa-info"></i>
+            </div>
+        </div>
+    </footer>
+
+    <div id="message-box" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white p-6 rounded-lg shadow-xl text-center">
+            <p class="text-lg font-semibold mb-4 text-gray-800">Login Required</p>
+            <p class="text-gray-600 mb-6">You need to be logged in to access Intermediate and Advanced tutorials.</p>
+            <button id="close-message-box" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">OK</button>
+        </div>
+    </div>
+
+    <script>
+        // Simulate login state (ensure this is consistent across pages or managed globally)
+        let isLoggedIn = false; // Set to true to test logged-in access
+
+        // Function to simulate user login (for demonstration)
+        function simulateLogin() {
+            isLoggedIn = true;
+            console.log("User is now logged in!");
+            // In a real app, you'd handle actual login process here
+        }
+
+        // JavaScript for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const messageBox = document.getElementById('message-box'); 
+            const closeMessageBoxButton = document.getElementById('close-message-box'); 
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Optional: Close mobile menu when a link is clicked
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Login restriction for Intermediate and Advanced links
+            const beginnerLink = document.getElementById('beginner-link');
+            const intermediateLink = document.getElementById('intermediate-link');
+            const advancedLink = document.getElementById('advanced-link');
+            const digitalArtLink = document.getElementById('digital-art-link'); 
+
+            function handleRestrictedAccess(event) {
+                if (event.currentTarget.id === 'beginner-link') {
+                    console.log("Accessing Beginner tutorials!");
+                    return true; 
+                }
+
+                if (!isLoggedIn) {
+                    event.preventDefault(); 
+                    if (messageBox) { 
+                        messageBox.classList.remove('hidden'); 
+                    }
+                    return false; 
+                } else {
+                    console.log(`Accessing: ${event.target.textContent} tutorials!`);
+                    return true; 
+                }
+            }
+
+            if (beginnerLink) {
+                beginnerLink.addEventListener('click', handleRestrictedAccess);
+            }
+            if (intermediateLink) {
+                intermediateLink.addEventListener('click', handleRestrictedAccess);
+            }
+            if (advancedLink) {
+                advancedLink.addEventListener('click', handleRestrictedAccess);
+            }
+            if (digitalArtLink) { 
+                digitalArtLink.addEventListener('click', handleRestrictedAccess);
+            }
+
+            // Close message box
+            if (closeMessageBoxButton) { 
+                closeMessageBoxButton.addEventListener('click', () => {
+                    if (messageBox) {
+                        messageBox.classList.add('hidden');
+                    }
+                });
+            }
+
+            // FAQ Accordion (only relevant if this script is also used on FAQ page)
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const header = item.querySelector('.faq-question-header');
+                header.addEventListener('click', () => {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

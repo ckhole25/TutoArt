@@ -1,0 +1,101 @@
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif; /* Comic Sans for a playful, artistic feel */ /* Default font for the body */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Specific background for the top hero section */
+.hero-background {
+    background-image: url('/assets/img/BG.png'); /* Replace with your actual hero image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-bg {
+    background-color:  #4B1F1F; /* Dark brown from the image */
+}
+
+.form-bg {
+    background-color: rgba(255, 255, 255, 0.2); /* Translucent white */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.tutoart-title {
+    font-family: 'Comic Sans MS', 'Comic Sans' cursive, sans-serif; /* A more artistic, flowing font for the main title */
+    font-size: 4rem; /* Large font size */
+    color: #333; /* Darker text for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.description-text {
+    font-family: 'Dancing Script', cursive; /* Artistic font for hero description */
+    font-size: 1.5rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Custom styles for the input fields to match the image's blue tint */
+.input-field {
+    background-color: rgba(173, 216, 230, 0.4); /* Light blue with transparency */
+    border: 1px solid rgba(173, 216, 230, 0.6);
+    color: #333;
+}
+
+.input-field::placeholder {
+    color: #555;
+}
+
+.login-btn {
+    background-color: #007bff; /* Blue for login button */
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.register-btn {
+    background-color: #28a745; /* Green for register button */
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #218838;
+}
+
+/* New styles for the additional sections */
+.orange-section-bg {
+    background-color: #c7643d; /* The orange-brown background from the new images */
+    color: white; /* Dark text for contrast on orange */
+}
+
+.section-title {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif; /* Artistic font for section titles */
+    font-weight: 700; /* Bold */
+    font-size: 2.5rem; /* Large size for titles like WELCOME, ARTIST! */
+}
+
+.section-subtitle {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif; /* Artistic font for subtitles */
+    font-weight: 500; /* Medium weight for sub-titles like HOW TO START... */
+    font-size: 1.8rem;
+}
+
+.list-item-title {
+    font-weight: 700; /* Bold for numbered list titles */
+}
+
+.info-icon {
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black for the info circle */
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+}

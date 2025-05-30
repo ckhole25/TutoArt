@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutoArt - FAQ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="header-bg text-white py-4 shadow-md">
+        <nav class="container mx-auto flex items-center justify-between px-4">
+            <div class="flex items-center space-x-2">
+                <img src="/assets/img/TutoArt_Logo-removebg-preview.png" alt="TutoArt Logo" class="h-20 w-25">
+                <span class="text-2xl font-bold">TutoArt</span>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="/index.html" class="hover:text-yellow-200 transition duration-300">Home</a>
+                
+                <div class="relative group">
+                    <a href="./FAQ.html" class="hover:text-yellow-200 transition duration-300 flex items-center dropdown-toggle" id="about-us-dropdown-toggle">
+                        About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-36 z-10 dropdown-menu" id="about-us-dropdown-menu">
+                        <a href="./FAQ.html" class="block px-4 py-2 hover:bg-gray-100">FAQs</a>
+                        <a href="../page2/aboout us.html" class="block px-4 py-2 hover:bg-gray-100">About us</a>
+                        <a href="../page3/support.html" class="block px-4 py-2 hover:bg-gray-100">Support</a>
+                    </div>
+                </div>
+                
+                <div class="relative group">
+                    <a href="#" class="hover:text-yellow-200 transition duration-300 flex items-center dropdown-toggle" id="drawings-dropdown-toggle">
+                        Drawings <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-40 z-10 dropdown-menu" id="drawings-dropdown-menu">
+                        <a href="../page4/drawings.html" class="block px-4 py-2 hover:bg-gray-100">Drawings</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Beginner</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Intermediate</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Advanced</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <a href="../page8/profile.html" class="hover:text-yellow-200 transition duration-300 flex items-center dropdown-toggle" id="profile-dropdown-toggle">
+                        Profile <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute hidden group-hover:block bg-white text-gray-800 rounded-md shadow-lg py-2 mt-2 w-36 z-10 dropdown-menu" id="profile-dropdown-menu">
+                        <a href="../page8/profile.html" class="block px-4 py-2 hover:bg-gray-100">My Profile</a>
+                </div>
+                
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-2">
+            <a href="/index.html" class="block px-4 py-2 text-white hover:bg-gray-700">Home</a>
+            <a href="../FAQ.html" class="block px-4 py-2 text-white hover:bg-gray-700">About Us</a>
+            <a href="../page4/drawings.html" class="block px-4 py-2 text-white hover:bg-gray-700">Drawings</a>
+            <a href="../page8/profile.html" class="block px-4 py-2 text-white hover:bg-gray-700">Profile</a>
+        </div>
+    </header>
+
+    <main class="flex-grow orange-section-bg py-16 px-4 relative">
+        <div class="container mx-auto max-w-4xl text-gray-800">
+            <h1 class="faq-title text-center md:text-left mb-8">Frequently Asked Questions (FAQs)</h1>
+
+            <!-- <h3 class="text-lg md:text-xl font-semibold mb-4 text-gray-700">Jump to a question:</h3>
+            <div class="mb-8">
+                <a href="#q-tutoart" class="faq-jump-link">What is TutoArt?</a>
+                <a href="#q-free" class="faq-jump-link">Is TutoArt free?</a>
+                <a href="#q-account" class="faq-jump-link">Do I need to make an account?</a>
+                <a href="#q-tutorials" class="faq-jump-link">What kind of tutorials can I find here?</a>
+            </div> -->
+
+            <div class="space-y-1"> 
+                <div class="faq-item rounded-lg overflow-hidden" id="q-tutoart">
+                    <div class="faq-question-header">
+                        <span>What is TutoArt?</span>
+                        <i class="fas fa-chevron-down faq-toggle-icon text-lg"></i>
+                    </div>
+                    <div class="faq-answer-content">
+                        <p>TutoArt is an online platform dedicated to providing step-by-step art tutorials for students and beginners. It's designed to help you explore and improve your artistic skills at your own pace, offering content from basic drawing to more advanced techniques.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item rounded-lg overflow-hidden" id="q-free">
+                    <div class="faq-question-header">
+                        <span>Is TutoArt free?</span>
+                        <i class="fas fa-chevron-down faq-toggle-icon text-lg"></i>
+                    </div>
+                    <div class="faq-answer-content">
+                        <p>Yes, TutoArt offers a wide range of free tutorials. Our goal is to make art education accessible to everyone. There might be premium content or features introduced in the future, but the core learning resources will remain free.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item rounded-lg overflow-hidden" id="q-account">
+                    <div class="faq-question-header">
+                        <span>Do I need to make an account?</span>
+                        <i class="fas fa-chevron-down faq-toggle-icon text-lg"></i>
+                    </div>
+                    <div class="faq-answer-content">
+                        <p>While you can browse many tutorials as a guest, creating a free account allows you to track your progress, save your favorite lessons, and access exclusive content. It's highly recommended for the best experience!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item rounded-lg overflow-hidden" id="q-tutorials">
+                    <div class="faq-question-header">
+                        <span>What kind of tutorials can I find here?</span>
+                        <i class="fas fa-chevron-down faq-toggle-icon text-lg"></i>
+                    </div>
+                    <div class="faq-answer-content">
+                        <p>TutoArt features a diverse collection of tutorials covering various artistic mediums and skill levels. You'll find lessons on drawing (beginner, intermediate, advanced), painting, digital art, and more. We continuously add new content to keep your creative journey exciting.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="absolute bottom-4 left-4">
+            <div class="info-icon">
+                <i class="fas fa-info"></i>
+            </div>
+        </div>
+    </main>
+
+    <footer class="orange-section-bg py-4 text-center text-sm md:text-base border-t border-gray-600 relative">
+        <p class="text-gray-700">
+            TutoArt | Beginner tutorials are from YouTube creators (credited). Intermediate and Advanced content is original. | © 2025 TutoArt. All rights reserved.
+        </p>
+        <div class="absolute bottom-4 left-4 md:hidden">
+            <div class="info-icon">
+                <i class="fas fa-info"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Optional: Close mobile menu when a link is clicked
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // JavaScript for clickable dropdowns in header
+            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const dropdownMenu = this.nextElementSibling;
+                    if (dropdownMenu && dropdownMenu.classList.contains('dropdown-menu')) {
+                        dropdownMenu.classList.toggle('hidden');
+                    }
+                });
+            });
+
+            // Close header dropdowns when clicking outside
+            window.addEventListener('click', function(event) {
+                dropdownToggles.forEach(toggle => {
+                    const dropdownMenu = toggle.nextElementSibling;
+                    if (dropdownMenu && dropdownMenu.classList.contains('dropdown-menu')) {
+                        if (!toggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                            dropdownMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+
+            // JavaScript for FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const header = item.querySelector('.faq-question-header');
+                const answer = item.querySelector('.faq-answer-content');
+
+                header.addEventListener('click', () => {
+                    // Close all other open FAQ items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+
+                    // Toggle active class on the clicked item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

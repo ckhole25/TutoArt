@@ -1,0 +1,211 @@
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif; /* Comic Sans for a playful, artistic feel */ /* Default font for the body */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Specific background for the top hero section */
+.hero-background {
+    background-image: url('/assets/img/TutoArt Background.png'); /* Replace with your actual hero image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-bg {
+    background-color: #4B1F1F; /* Dark brown from the image */
+}
+
+.form-bg {
+    background-color: rgba(255, 255, 255, 0.2); /* Translucent white */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.tutoart-title {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif; /* A more artistic, flowing font for the main title */
+    font-size: 4rem; /* Large font size */
+    color: #333; /* Darker text for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.description-text {
+    font-family: 'Dancing Script', cursive; /* Artistic font for hero description */
+    font-size: 1.5rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Custom styles for the input fields to match the image's blue tint */
+.input-field {
+    background-color: rgba(173, 216, 230, 0.4); /* Light blue with transparency */
+    border: 1px solid rgba(173, 216, 230, 0.6);
+    color: #333;
+}
+
+.input-field::placeholder {
+    color: #555;
+}
+
+.login-btn {
+    background-color: #007bff; /* Blue for login button */
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.register-btn {
+    background-color: #28a745; /* Green for register button */
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #218838;
+}
+
+/* New styles for the additional sections */
+.orange-section-bg {
+    background-color: #c7643d; /* The orange-brown background from the new images */
+    color: white; /* Default text color for this section */
+}
+
+.section-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 2.5rem; /* Large size for titles like WELCOME, ARTIST! */
+}
+
+.section-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; /* Medium weight for sub-titles like HOW TO START... */
+    font-size: 1.8rem;
+}
+
+.list-item-title {
+    font-weight: 700; /* Bold for numbered list titles */
+}
+
+.info-icon {
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black for the info circle */
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+}
+
+/* FAQ Page Specific Styles */
+.faq-title {
+    font-family: 'Dancing Script', cursive; /* Cursive font for FAQ main title */
+    font-size: 3rem;
+    color: #333; /* Dark text for contrast on orange background */
+    margin-bottom: 1.5rem;
+}
+
+.faq-jump-link {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    color: #333; /* Dark text for links */
+    text-decoration: underline;
+    display: block; /* Each link on its own line */
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Styles for accordion FAQ items */
+.faq-item {
+    background-color: #A96E59; /* A slightly darker brown for the FAQ item background */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Subtle separator */
+    margin-bottom: 1px; /* To prevent gaps between items */
+    cursor: pointer;
+    overflow: hidden; /* For smooth height transition */
+}
+
+.faq-question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #EDE8E4; /* Light text for question */
+    transition: background-color 0.3s ease;
+}
+
+.faq-question-header:hover {
+    background-color: #8D5A47; /* Slightly darker hover effect */
+}
+
+.faq-toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-toggle-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer-content {
+    background-color: #A96E59; /* Same background as question header */
+    padding: 0 1.5rem; /* Padding only left/right */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #F8F5F2; /* Lighter text for answer */
+    line-height: 1.6;
+    max-height: 0; /* Hidden by default */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth transition */
+}
+
+.faq-item.active .faq-answer-content {
+    max-height: 200px; /* Adjust as needed for content length */
+    padding-bottom: 1.5rem; /* Add bottom padding when active */
+}
+
+/* About Us Page Specific Styles */
+.about-us-content-bg {
+    background-color: #8B4513; /* A darker brown from the image */
+    color: #EDE8E4; /* Light text for contrast */
+    padding: 2rem;
+    border-radius: 0.5rem; /* Slightly rounded corners */
+    width: 100%; /* Make it stretch the whole width */
+    max-width: none; /* Ensure no max-width limits it */
+}
+
+.about-us-text {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif; /* Consistent font */
+    font-size: 1.25rem; /* Slightly larger text */
+    line-height: 1.8;
+    text-align: left; /* Reverted to left-aligned text as per image */
+}
+
+/* Support Us Page Specific Styles */
+.support-us-content-bg {
+    background-color: #A96E59; /* A distinct brown for the support content box */
+    color: #EDE8E4; /* Light text for contrast */
+    padding: 2.5rem; /* More padding */
+    border-radius: 0.5rem;
+    width: 100%; /* Stretch full width */
+    max-width: none; /* Override any max-width */
+    text-align: left; /* Text alignment as per image */
+}
+
+.support-us-text {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+.support-us-section-title {
+    font-family: 'Dancing Script', cursive; /* Cursive font for the title */
+    font-size: 3rem;
+    color: #333; /* Dark text for contrast on orange background */
+    margin-bottom: 1.5rem;
+    text-align: center; /* Centered as per image */
+}
